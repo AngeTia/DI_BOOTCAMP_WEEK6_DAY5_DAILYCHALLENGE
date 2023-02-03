@@ -26,7 +26,8 @@ function readFichier($nomFile)
     }
 }
 
-function getWord($result) {
+function getWord($result)
+{
     $tabMot = explode(" ", $result);
     $nbWord = count($tabMot);
     $randIndex = rand(0, $nbWord);
@@ -35,7 +36,8 @@ function getWord($result) {
     return $word;
 }
 
-function drawDash($word, $pos, $letter) {
+function drawDash($word, $pos, $letter)
+{
     $nbChar = strlen($word);
     $dash = str_repeat("_", $nbChar);
     $tab = [];
