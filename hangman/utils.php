@@ -63,8 +63,6 @@ function getInputUser($word)
     echo $contenu.PHP_EOL;   
 }
 
-
-
 $lineRecup = readFichier("listmot.txt");
 $word = getWord($lineRecup);
 getInputUser($word);
